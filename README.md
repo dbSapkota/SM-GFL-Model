@@ -7,7 +7,7 @@ The live script code (.mlx) for the Greedy algorithm is located at: Optimization
 
 The live script code (.mlx) for the Nonlinear optimization is located at: Optimization Codes/Nonlinear Optimization/nonlinear_optimization.mlx
 
-#### Note: Run the Greedy Algorithm before Nonlinear optimization in the same MATLAB workspace.
+####* Note: Run the Greedy Algorithm before Nonlinear optimization in the same MATLAB workspace. *
 
 -------------------------------------------------------------------------------
 # Model Overview
