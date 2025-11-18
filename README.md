@@ -1,6 +1,4 @@
-v1.0 
-
-
+# Overview
 This repo contains MATLAB files for the model and code used in the research paper \textit{"Optimal Singular Perturbation-based Model Reduction for Heterogeneous Power Systems"}.
 
 The model is located at: System_LTI_Model/sys_6_bus.mat
@@ -86,3 +84,5 @@ Parameter Notes:
 [1] D. Venkatramanan and S. Dhople, "Per-Unit Modeling via Similarity Transformation," in IEEE Transactions on Energy Conversion, vol. 38, no. 2, pp. 825-837, June 2023, doi: 10.1109/TEC.2022.3204933.
 
 [2] P. Kundur, Power System Stability and Control, 1st ed., ser. The EPRI Power System Engineering Series. New York: McGraw-Hill, 1994.
+
+v1.0
