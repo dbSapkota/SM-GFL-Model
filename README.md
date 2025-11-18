@@ -24,7 +24,7 @@ External Inputs
 
 The external input vector $\in \mathbb{R}^{12}$ is:
 
-$ V_{1,fd}^\top $
+$V_{1,fd}^\top$
 
     
 Outputs
