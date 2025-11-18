@@ -78,7 +78,7 @@ Parameter Notes:
 
     Mechanical parameters differ slightly (moment of inertia, governor time constant, droop coefficient)
 
-## References
+## References for the model
 
 [1] D. Venkatramanan and S. Dhople, "Per-Unit Modeling via Similarity Transformation," in IEEE Transactions on Energy Conversion, vol. 38, no. 2, pp. 825-837, June 2023, doi: 10.1109/TEC.2022.3204933.
 
