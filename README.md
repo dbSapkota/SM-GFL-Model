@@ -8,33 +8,71 @@ The live script code (.mlx) for the Greedy algorithm is located at: Optimization
 
 The live script code (.mlx) for the Nonlinear optimization is located at: Optimization Codes/Nonlinear Optimization/nonlinear_optimization.mlx
 
+Power System Model
+Model Overview
 
-The overall model has $\textbf{56}$ dynamical states, of which 18 are synchronous machine states, 12 are inverter states and remaining are line states. Here, a bold-face "dq" state represents a vector of two individual states, i.e., $\mathbf{x}_{dq} =  [x_d^\top, x_q^\top]^\top \in \mathbb{R}^2$.
+This repository contains a power system model with 56 dynamical states distributed as follows:
 
-The external input vector is
-\begin{aligned}
-    &[V_{1,fd}^\top ,  \mathbf{I}_{dq, inv_1}^{\star \top}, P_{1,ref}^\top,,\mathbf{I}_{dq, load_1}^{\star\top },\\
-    &V_{2,fd}^\top , \mathbf{I}_{dq, inv_2}^{\star\top },P_{2,ref}^\top, \mathbf{I}_{dq, load_2}^{\star\top }]^\top  
-    \in \mathbb{R}^{12}
-\end{aligned}
+    18 synchronous machine states (2 machines × 9 states each)
 
-The output vector $[w_1^\top, w_2^\top]^\top \in \mathbb{R}^2 $ represent the frequencies at the two synchronous machine buses. Other outputs are also possible (such as line currents, bus voltages etc.). The load consumes current based on the reference current value.
+    12 inverter states (2 inverters × 6 states each)
 
-A $6-th$ order model of GFL as derived in \cite{per_unit_inverter_modeling} is used in this work. The interal states of the inverter are:
-\begin{equation}
-   \begin{aligned}
-    &[\mathbf{I}_{dq}^\top, \mathbf{\Gamma}_{dq}^\top,\Phi^\top,\Theta^\top]^\top \in \mathbb{R}^6
-\end{aligned} 
-\label{inverter_states}
-\end{equation}
-where, $\mathbf{I}_{dq}$ are inverter current outputs, $\mathbf{\Gamma}_{dq}$ are current controller states. Frequency dynamics are governed by a phase-locked-loop (PLL), which extracts the angle $\Theta$ whose dynamics are represented by $\Phi$. The two GFL inverters have the same parameter values.
+    26 line states (remaining states)
 
-A synchronous machine is represented by a $9-th$ order model whose internal states are given as
-\begin{equation}
-    \begin{aligned}
-     &[I_d^\top   ,I_q^\top   , I_{fd}^\top   ,I_{1d}^\top   , I_{1q}^\top   , \delta^\top, \omega^\top   , G^\top   , \tau_m^\top    ]^\top \in \mathbb{R}^{9}  
-    \end{aligned}
-    \label{sm_states}
-\end{equation}
-where, $[I_d^\top   ,I_q^\top ]$ represent the stator circuit currents, $[I_{fd}^\top   ,I_{1d}^\top   , I_{1q}^\top]^\top$ represent the rotor circuit currents,  $\delta$ and $ \omega$ represent rotor angle and frequency respectively, $G$ is the governor valve/gate position state and $\tau_m$ is the mechanical torque. The electrical parameters for the machine are obtained from \cite{kundur_stability_book} (Chapter 4: Synchronous Machine Parameters) Page 153-Example 4.1. All the values are in per unit.
-The two synchronous machines in the network have the same electrical parameters (Winding resistance, inductances etc.) but slightly different mechanical parameters (MOI, governor time constant, and droop coefficient). 
+Note: A bold-face "dq" state represents a vector of two individual states: $\mathbf{x}_{dq} = [x_d^\top, x_q^\top]^\top \in \mathbb{R}^2$.
+External Inputs
+
+The external input vector $\in \mathbb{R}^{12}$ is:
+text
+
+[V₁,fdᵀ, 𝐈*dq,inv₁ᵀ, P₁,refᵀ, 𝐈*dq,load₁ᵀ,
+ V₂,fdᵀ, 𝐈*dq,inv₂ᵀ, P₂,refᵀ, 𝐈*dq,load₂ᵀ]ᵀ
+
+Outputs
+
+The primary output vector $[w_1^\top, w_2^\top]^\top \in \mathbb{R}^2$ represents the frequencies at the two synchronous machine buses. Additional outputs such as line currents and bus voltages are also available.
+Component Models
+Grid-Following (GFL) Inverter Model
+
+6th-order model with internal states:
+text
+
+[𝐈dqᵀ, 𝚪dqᵀ, Φᵀ, Θᵀ]ᵀ ∈ ℝ⁶
+
+Where:
+
+    𝐈dq: inverter current outputs
+
+    𝚪dq: current controller states
+
+    Φ, Θ: Phase-Locked Loop (PLL) states for frequency dynamics and angle extraction
+
+Both GFL inverters have identical parameter values.
+Synchronous Machine Model
+
+9th-order model with internal states:
+text
+
+[Iᵀd, Iᵀq, Iᵀfd, Iᵀ1d, Iᵀ1q, δᵀ, ωᵀ, Gᵀ, τᵀm]ᵀ ∈ ℝ⁹
+
+Where:
+
+    Iᵀd, Iᵀq: stator circuit currents
+
+    Iᵀfd, Iᵀ1d, Iᵀ1q: rotor circuit currents
+
+    δ, ω: rotor angle and frequency
+
+    G: governor valve/gate position
+
+    τm: mechanical torque
+
+Parameter Notes:
+
+    Electrical parameters from Kundur Stability Book (Chapter 4, Example 4.1)
+
+    All values in per unit
+
+    Both machines have identical electrical parameters
+
+    Mechanical parameters differ slightly (moment of inertia, governor time constant, droop coefficient)
