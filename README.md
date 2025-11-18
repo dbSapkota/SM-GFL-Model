@@ -25,7 +25,7 @@ External Inputs
 The external input vector $\in \mathbb{R}^{12}$ is:
 text
 
-$V_{1,fd}$
+$V_{1,fd}^\top$
 [V_1,fdᵀ, 𝐈*dq,inv₁ᵀ, P₁,refᵀ, 𝐈*dq,load₁ᵀ,
  V₂,fdᵀ, 𝐈*dq,inv₂ᵀ, P₂,refᵀ, 𝐈*dq,load₂ᵀ]ᵀ
 
