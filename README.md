@@ -70,7 +70,7 @@ Where:
 
 Parameter Notes:
 
-    Electrical parameters from Kundur Stability Book (Chapter 4, Example 4.1)
+    Electrical parameters from [2] (Chapter 4, Example 4.1)
 
     All values in per unit
 
