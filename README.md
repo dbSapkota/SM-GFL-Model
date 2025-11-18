@@ -19,7 +19,7 @@ This repository contains a power system model with 56 dynamical states distribut
 
     26 line states (remaining states)
 
-Note: A bold-face "dq" state represents a vector of two individual states: $\mathbf{x}_{dq} = [x_d^\top, x_q^\top]^\top \in \mathbb{R}^2$.
+Note: A "dq" state represents a vector of two individual states: $\mathbf{x}_{dq} = [x_d^\top, x_q^\top]^\top \in \mathbb{R}^2$.
 External Inputs
 
 The external input vector $\in \mathbb{R}^{12}$ is:
@@ -30,10 +30,11 @@ The external input vector $\in \mathbb{R}^{12}$ is:
 Outputs
 
 The primary output vector $[w_1^\top, w_2^\top]^\top \in \mathbb{R}^2$ represents the frequencies at the two synchronous machine buses. Additional outputs such as line currents and bus voltages are also available.
-Component Models
-Grid-Following (GFL) Inverter Model
 
-6th-order model with internal states:
+
+### Grid-Following (GFL) Inverter Model
+
+6th-order model, [1], with internal states:
 text
 
 [𝐈dqᵀ, 𝚪dqᵀ, Φᵀ, Θᵀ]ᵀ ∈ ℝ⁶
@@ -78,7 +79,6 @@ Parameter Notes:
 
 ### References
 
-[] D. Venkatramanan and S. Dhople, "Per-Unit Modeling via Similarity Transformation," in IEEE Transactions on Energy Conversion, vol. 38, no. 2, pp. 825-837, June 2023, doi: 10.1109/TEC.2022.3204933.
-keywords: {Analytical models;Inverters;Integrated circuit modeling;Mathematical models;Eigenvalues and eigenfunctions;Task analysis;Steady-state;Grid-following inverters;grid-forming inverters;per-unit models;similarity transformation},
+[1] D. Venkatramanan and S. Dhople, "Per-Unit Modeling via Similarity Transformation," in IEEE Transactions on Energy Conversion, vol. 38, no. 2, pp. 825-837, June 2023, doi: 10.1109/TEC.2022.3204933.
 
-[] P. Kundur, Power System Stability and Control, 1st ed., ser. The EPRI Power System Engineering Series. New York: McGraw-Hill, 1994.
+[2] P. Kundur, Power System Stability and Control, 1st ed., ser. The EPRI Power System Engineering Series. New York: McGraw-Hill, 1994.
