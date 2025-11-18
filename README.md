@@ -8,7 +8,7 @@ The live script code (.mlx) for the Greedy algorithm is located at: Optimization
 The live script code (.mlx) for the Nonlinear optimization is located at: Optimization Codes/Nonlinear Optimization/nonlinear_optimization.mlx
 
 
-The overall model has \textbf{56} dynamical states, of which 18 are synchronous machine states, 12 are inverter states and remaining are line states. Here, a bold-face "dq" state represents a vector of two individual states, i.e., $\mathbf{x}_{dq} =  [x_d^\top, x_q^\top]^\top \in \mathbb{R}^2$.
+The overall model has $\textbf{56}$ dynamical states, of which 18 are synchronous machine states, 12 are inverter states and remaining are line states. Here, a bold-face "dq" state represents a vector of two individual states, i.e., $\mathbf{x}_{dq} =  [x_d^\top, x_q^\top]^\top \in \mathbb{R}^2$.
 
 The external input vector is $$ 
 \begin{aligned}
