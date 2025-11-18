@@ -1,3 +1,4 @@
+v1.0 
 
 This repo contains MATLAB files for the model and code used in the research paper "Optimal Singular Perturbation-based Model Reduction for Heterogeneous Power Systems"
 
