@@ -10,12 +10,12 @@ The live script code (.mlx) for the Nonlinear optimization is located at: Optimi
 
 The overall model has $\textbf{56}$ dynamical states, of which 18 are synchronous machine states, 12 are inverter states and remaining are line states. Here, a bold-face "dq" state represents a vector of two individual states, i.e., $\mathbf{x}_{dq} =  [x_d^\top, x_q^\top]^\top \in \mathbb{R}^2$.
 
-The external input vector is $$ 
+The external input vector is $ 
 \begin{aligned}
     &[V_{1,fd}^\top ,  \mathbf{I}_{dq, inv_1}^{\star \top}, P_{1,ref}^\top,,\mathbf{I}_{dq, load_1}^{\star\top },\\
     &V_{2,fd}^\top , \mathbf{I}_{dq, inv_2}^{\star\top },P_{2,ref}^\top, \mathbf{I}_{dq, load_2}^{\star\top }]^\top  
     \in \mathbb{R}^{12}
-\end{aligned} $$
+\end{aligned} $
 
 The output vector $[w_1^\top, w_2^\top]^\top \in \mathbb{R}^2 $ represent the frequencies at the two synchronous machine buses. Other outputs are also possible (such as line currents, bus voltages etc.). The load consumes current based on the reference current value.
 
