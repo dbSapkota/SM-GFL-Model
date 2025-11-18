@@ -8,8 +8,8 @@ The live script code (.mlx) for the Greedy algorithm is located at: Optimization
 
 The live script code (.mlx) for the Nonlinear optimization is located at: Optimization Codes/Nonlinear Optimization/nonlinear_optimization.mlx
 
-Power System Model
-Model Overview
+-------------------------------------------------------------------------------
+## Model Overview
 
 This repository contains a power system model with 56 dynamical states distributed as follows:
 
