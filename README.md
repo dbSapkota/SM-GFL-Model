@@ -26,9 +26,8 @@ Note: A "dq" state represents a vector of two individual states: $\mathbf{x}_{dq
 
 The external input vector $\in \mathbb{R}^{12}$ is:
 
-[V₁,fdᵀ, 𝐈*dq,inv₁ᵀ, P₁,refᵀ, 𝐈*dq,load₁ᵀ,
- V₂,fdᵀ, 𝐈*dq,inv₂ᵀ, P₂,refᵀ, 𝐈*dq,load₂ᵀ]ᵀ
- 
+<img width="444" height="91" alt="image" src="https://github.com/user-attachments/assets/55442558-9fd4-46bb-9718-4d252480e3b2" />
+
 ## Outputs
 
 The primary output vector $[w_1^\top, w_2^\top]^\top \in \mathbb{R}^2$ represents the frequencies at the two synchronous machine buses. Additional outputs such as line currents and bus voltages are also available.
@@ -39,7 +38,7 @@ The primary output vector $[w_1^\top, w_2^\top]^\top \in \mathbb{R}^2$ represent
 6th-order model, [1], with internal states:
 
 
-[𝐈dqᵀ, 𝚪dqᵀ, Φᵀ, Θᵀ]ᵀ ∈ ℝ⁶
+<img width="297" height="59" alt="image" src="https://github.com/user-attachments/assets/770d2be9-7734-4a09-9814-f95533a3f1c4" />
 
 Where:
 
@@ -55,7 +54,8 @@ Both GFL inverters have identical parameter values.
 
 9th-order model with internal states:
 
-[Iᵀd, Iᵀq, Iᵀfd, Iᵀ1d, Iᵀ1q, δᵀ, ωᵀ, Gᵀ, τᵀm]ᵀ ∈ ℝ⁹
+<img width="491" height="52" alt="image" src="https://github.com/user-attachments/assets/61641029-6298-436e-9df4-a6eec9260d7f" />
+
 
 Where:
 
