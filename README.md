@@ -1,5 +1,5 @@
 # Overview
-This repo contains MATLAB files for the model and code used in the research paper \textit{"Optimal Singular Perturbation-based Model Reduction for Heterogeneous Power Systems"}.
+This repo contains MATLAB files for the model and code used in the research paper ***"Optimal Singular Perturbation-based Model Reduction for Heterogeneous Power Systems"***.
 
 The model is located at: System_LTI_Model/sys_6_bus.mat
 
