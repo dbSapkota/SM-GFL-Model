@@ -26,7 +26,7 @@ Note: A "dq" state represents a vector of two individual states: $\mathbf{x}_{dq
 
 The external input vector $\in \mathbb{R}^{12}$ is:
 
-<img width="444" height="91" alt="image" src="https://github.com/user-attachments/assets/55442558-9fd4-46bb-9718-4d252480e3b2" />
+<img width="431" height="96" alt="image" src="https://github.com/user-attachments/assets/7baa0b6d-5e16-46e9-bb85-f30f69bbcb46" />
 
 ## Outputs
 
@@ -38,7 +38,7 @@ The primary output vector $[w_1^\top, w_2^\top]^\top \in \mathbb{R}^2$ represent
 6th-order model, [1], with internal states:
 
 
-<img width="297" height="59" alt="image" src="https://github.com/user-attachments/assets/770d2be9-7734-4a09-9814-f95533a3f1c4" />
+<img width="250" height="55" alt="image" src="https://github.com/user-attachments/assets/4d8b324a-e895-4ccd-a354-f0d911c30314" />
 
 Where:
 
@@ -54,8 +54,7 @@ Both GFL inverters have identical parameter values.
 
 9th-order model with internal states:
 
-<img width="491" height="52" alt="image" src="https://github.com/user-attachments/assets/61641029-6298-436e-9df4-a6eec9260d7f" />
-
+<img width="427" height="52" alt="image" src="https://github.com/user-attachments/assets/44540d11-f9f5-4a4f-b0fe-d8169037ef6d" />
 
 Where:
 
