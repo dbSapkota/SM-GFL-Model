@@ -23,12 +23,9 @@ Note: A bold-face "dq" state represents a vector of two individual states: $\mat
 External Inputs
 
 The external input vector $\in \mathbb{R}^{12}$ is:
-text
-$
-V_{1,fd}^\top ,  \mathbf{I}_{dq, inv_1}^{\star \top}, P_{1,ref}^\top,,\mathbf{I}_{dq, load_1}^{\star\top },\\
-    &V_{2,fd}^\top , \mathbf{I}_{dq, inv_2}^{\star\top },P_{2,ref}^\top, \mathbf{I}_{dq, load_2}^{\star\top }]^\top  
-    \in \mathbb{R}^{12}
-    $
+
+$V_{1,fd}^\top ,  \mathbf{I}_{dq, inv_1}^{\star \top}, P_{1,ref}^\top,,\mathbf{I}_{dq, load_1}^{\star\top },\\
+&V_{2,fd}^\top , \mathbf{I}_{dq, inv_2}^{\star\top },P_{2,ref}^\top, \mathbf{I}_{dq, load_2}^{\star\top }]^\top  \in \mathbb{R}^{12}$
 
     
 Outputs
